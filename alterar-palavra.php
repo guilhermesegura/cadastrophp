@@ -13,7 +13,7 @@
     include("conexao.php");
 
     try {
-        $stmt = $pdo->prepare("update tbPalavra set nome = '$nome', cpf = '$cpf', rm = '$rm', curso = '$curso', ddn = '$ddn', modulo = '$modulo' where idcadastro = '$id'");
+        $stmt = $pdo->prepare("update tbcadastro set nome = '$nome', cpf = '$cpf', rm = '$rm', curso = '$curso', ddn = '$ddn', modulo = '$modulo' where idcadastro = '$id'");
 
         $stmt ->execute();
 
